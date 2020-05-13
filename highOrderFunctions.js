@@ -4,4 +4,11 @@ function repeat(n, action) {
     }
 }
 
-repeat(3, console.log);
+// repeat(3, console.log);
+
+let labels = [];
+repeat(5, i => {
+    labels.push(`Unit ${i + 1}`);
+});
+
+console.log(labels);
