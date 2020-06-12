@@ -1,3 +1,5 @@
+let number = process.argv.slice(2);
+
 function isPrime(n) {
     let prime = n;
     
@@ -20,4 +22,4 @@ function returnListOfPrimeNumbers(max) {
     return listOfPrimeNumbers;
 }
 
-console.log(returnListOfPrimeNumbers(500));
+console.log(returnListOfPrimeNumbers(number));
