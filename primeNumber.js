@@ -16,6 +16,7 @@ function returnListOfPrimeNumbers(max) {
     let listOfPrimeNumbers = [];
     for (let i = 2; i < max; i++) {
         if (isPrime(i)) {
+            process.stdout.write("Current prime: " + i + "\033[0G");
             listOfPrimeNumbers.push(i);
         }
     }
