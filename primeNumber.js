@@ -1,14 +1,12 @@
 function isPrime(n) {
-    let sqrt = Math.floor(Math.sqrt(n));
     let prime = n;
     
-    for (let i = 2; i < sqrt + 1; i++) {
+    for (let i = 2; i * i < n + 1; i++) {
         if (n % i === 0) {
             prime = false;
             break;
         }
     }
-    
     return prime;
 }
 
